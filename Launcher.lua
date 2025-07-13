@@ -1,11 +1,11 @@
 getgenv().TempestHubVersion = "v1.4.4"
 
 local supportedPlaces = {
-    9377953133
+    3504161197
 }
 
 if table.find(supportedPlaces, game.PlaceId) then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fuzeuchi17/tempest-hub/main/" .. game.PlaceId .. ".lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fuzeuchi17/tempest-hub/main/" .. tostring(game.PlaceId) .. ".lua"))()
 else
-    warn("🚫 TempestHub: Place not supported. PlaceId = " .. tostring(game.PlaceId))
+    warn("Game not supported: " .. tostring(game.PlaceId))
 end
