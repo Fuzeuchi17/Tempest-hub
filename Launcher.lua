@@ -1,7 +1,7 @@
 getgenv().TempestHubVersion = "v1.4.4"
 
 local supportedGames = {
-    "9377953133"
+    "3504161197" -- MSF or your current game's GameId
 }
 
 if table.find(supportedGames, tostring(game.GameId)) then
